@@ -55,7 +55,14 @@
         <members>movieListCard</members>
         <members>movieHeader</members>
         <members>filterMovie</members>
+        <members>fiveStarRating</members>
         <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>rating</members>
+        <members>rating.css</members>
+        <members>data</members>
+        <name>StaticResource</name>
     </types>
     <version>53.0</version>
 </Package>

@@ -10,14 +10,14 @@ export default class MoviePreview extends LightningElement {
         title: 'Titanic',
         rating: 4,
         type: '+16',
-        description : 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum '
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices congue turpis, ut venenatis lacus porttitor vitae. Nulla in ante gravida, rhoncus lorem ut, fermentum diam. Aenean suscipit leo cursus, laoreet diam in, ultricies lorem. In eu nisl vel nunc dictum semper. Aliquam pharetra dictum metus in pulvinar.'
     }
 
-    handleUpdateClick(){
+    handleUpdateClick() {
 
     }
 
-    handleDeleteClick(){
+    handleDeleteClick() {
 
     }
 

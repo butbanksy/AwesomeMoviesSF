@@ -5,14 +5,14 @@
 <!-- Movie List -->
 <template>
     <div class="slds-grid slds-wrap">
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
-        <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-3 slds-m-around_xxx-small slds-box"></c-movie-list-card>
+        <template if:true={isLoading}>
+            <lightning-spinner variant="brand" alternative-text="Loading movies"></lightning-spinner>
+        </template>
+
+
+        <template if:true={data.length} for:each={data} for:item="movie">
+          <c-movie-list-card class="slds-small-size_1-2 slds-size_1-of-4 slds-m-around_small slds-box" key={movie.id} movie={movie}></c-movie-list-card>
+        </template>
+
     </div>
 </template>
