@@ -48,5 +48,14 @@
         <members>ReadOnly</members>
         <name>Profile</name>
     </types>
+    <types>
+        <members>moviePreview</members>
+        <members>movieContainer</members>
+        <members>movieList</members>
+        <members>movieListCard</members>
+        <members>movieHeader</members>
+        <members>filterMovie</members>
+        <name>LightningComponentBundle</name>
+    </types>
     <version>53.0</version>
 </Package>

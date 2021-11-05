@@ -9,12 +9,17 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>moviePreview</componentName>
+            </componentInstance>
+        </itemInstances>
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Movies Management</masterLabel>
     <template>
-        <name>flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar</name>
+        <name>flexipage:appHomeTemplateHeaderTwoColumns</name>
     </template>
     <type>AppPage</type>
 </FlexiPage>
