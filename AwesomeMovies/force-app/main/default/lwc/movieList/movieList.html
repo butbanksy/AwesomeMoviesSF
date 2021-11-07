@@ -9,9 +9,25 @@
             <lightning-spinner variant="brand" alternative-text="Loading movies"></lightning-spinner>
         </template>
 
+        <!--Filter movie with search value start-->
+        <div class="slds-grid slds-size_1-of-1">
+            <div class="slds-align_absolute-center">
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <lightning-icon size="x-small"
+                                    class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default"
+                                    icon-name="utility:search"></lightning-icon>
+                    <lightning-input label="Search" variant="label-hidden" type="text" id="text-input-id-1"
+                                     placeholder="Search for movie..." value={filterText} onchange={handleSearch}></lightning-input>
+                </div>
 
-        <template if:true={data.length} for:each={data} for:item="movie">
-          <c-movie-list-card class="slds-size_1-of-4 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-small-size_1-of-1 slds-m-right_xxx-small" key={movie.id} movie={movie} onselectedmovie= {handleSelectedMovie}></c-movie-list-card>
+            </div>
+        </div>
+        <!--Filter movie with search value end-->
+
+        <template if:true={data.length} for:each={filteredData} for:item="movie">
+            <c-movie-list-card
+                    class="slds-size_1-of-4 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-small-size_1-of-1 slds-m-right_xxx-small"
+                    key={movie.id} movie={movie} onselectedmovie={handleSelectedMovie}></c-movie-list-card>
         </template>
 
     </div>

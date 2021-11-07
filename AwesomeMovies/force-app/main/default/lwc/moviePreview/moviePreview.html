@@ -17,6 +17,8 @@
         <div class="slds-text-title">Description : <span class="slds-text-body_small">{movieSelected.description}</span>
         </div>
     </div>
-    <p>Select a movie!</p>
+    <div if:false={movieSelected}>
+        <c-not-found title="No movie selected." message="Select a movie to display its details here."></c-not-found>
+    </div>
 </template>
 

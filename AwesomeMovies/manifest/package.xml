@@ -57,6 +57,7 @@
         <members>filterMovie</members>
         <members>fiveStarRating</members>
         <members>starRating</members>
+        <members>notFound</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
