@@ -1,0 +1,71 @@
+/**
+ * Created by mrhazzoul on 5/11/2021.
+ */
+
+*:before, *:after {
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 1.2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #FC0;
+    border-left: 0.3em solid transparent;
+    /* Controlls the size of the stars. */
+    font-size: 9px;
+}
+.star:before, .star:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #FC0;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+.star:after {
+    transform: rotate(35deg);
+}
+
+.unrated {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    margin-bottom: 1.2em;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid gray;
+    border-left: 0.3em solid transparent;
+    /* Controlls the size of the stars. */
+    font-size: 9px;
+}
+.unrated:before, .unrated:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid gray;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+.unrated:after {
+    transform: rotate(35deg);
+}
+

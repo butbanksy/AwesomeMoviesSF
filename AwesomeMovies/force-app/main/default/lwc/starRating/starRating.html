@@ -1,0 +1,13 @@
+<!--
+ - Created by mrhazzoul on 5/11/2021.
+ -->
+
+<!-- Star Rating -->
+<template>
+    <template for:each={ratedStars} for:item="ratedStar" for:index="i">
+        <i class="star" key={ratedStar}></i>
+    </template>
+    <template for:each={unratedStars} for:item="unratedStar" for:index="i">
+        <i class="unrated" key={unratedStar}></i>
+    </template>
+</template>

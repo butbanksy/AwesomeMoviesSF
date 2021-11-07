@@ -33,7 +33,7 @@
                 id: 4,
                 image: 'https://www.tvguide.com/a/img/catalog/provider/1/2/1-172442538.jpg',
                 title: 'The Hangover',
-                rating: 3.5,
+                rating: 3,
                 type: '+16',
                 description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum '
             },
@@ -42,7 +42,7 @@
                 id: 5,
                 image: 'https://flxt.tmsimg.com/assets/p9742380_p_v10_ai.jpg',
                 title: "We're The Millers",
-                rating: 4.5,
+                rating: 4,
                 type: '+16',
                 description: 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum '
             }];

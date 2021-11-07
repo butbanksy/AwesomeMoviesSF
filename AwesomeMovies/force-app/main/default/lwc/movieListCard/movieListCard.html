@@ -4,12 +4,19 @@
 
 <!-- Movie List Card -->
 <template>
-    <lightning-card variant="base">
-        <div class=slds-container_center>
-            <div class="slds-size_2-of-2"><img src={movie.image} alt={movie.title}></div>
+    <lightning-card variant="base" onclick={selectMovie} class="slds-p-around_small">
+        <div class="slds-container_center slds-align_absolute-center">
+            <div class="slds-size_5-of-6"><img src={movie.image} alt={movie.title}></div>
         </div>
-        <div class="slds-m-top_xx-small slds-text-heading_medium">{movie.title}</div>
-        <div class="slds-text-title slds-m-around_xxx-small">Type : {movie.type}</div>
-        <div class="slds-text-title slds-m-around_xxx-small">Rating : {movie.rating}</div>
+        <div class="slds-p-horizontal_small">
+            <div class="slds-m-vertical_xx-small slds-text-heading_medium">{movie.title}</div>
+            <div class="slds-text-title slds-m-around_xxx-small">Type : {movie.type}</div>
+            <div class="slds-grid">
+                <div class="slds-text-title slds-m-around_xxx-small slds-col-1">Rating :</div>
+                <div class="slds-col">
+                    <c-star-rating rating={movie.rating} movie-name={movie.title}></c-star-rating>
+                </div>
+            </div>
+        </div>
     </lightning-card>
 </template>
