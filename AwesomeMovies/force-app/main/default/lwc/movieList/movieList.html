@@ -26,7 +26,7 @@
 
         <template if:true={data.length} for:each={filteredData} for:item="movie">
             <c-movie-list-card
-                    class="slds-size_1-of-4 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-small-size_1-of-1 slds-m-right_xxx-small"
+                    class="slds-size_1-of-4 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-small-size_1-of-1 slds-p-horizontal_xx-small"
                     key={movie.id} movie={movie} onselectedmovie={handleSelectedMovie}></c-movie-list-card>
         </template>
 

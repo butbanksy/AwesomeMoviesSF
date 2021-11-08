@@ -1,0 +1,33 @@
+<!--
+ - Created by mrhazzoul on 8/11/2021.
+ -->
+
+<!-- Create Movie Modal -->
+<template>
+    <template if:true={openModal}>
+        <div class="slds-modal slds-fade-in-open slds-backdrop">
+            <div class="slds-modal__container">
+                <!------HEADER Section-->
+                <div class="slds-modal__header">
+                    <lightning-button-icon icon-name="utility:close" alternative-text="Close this window" size="large"
+                                           variant="bare-inverse" onclick={handleCloseModal} class="slds-modal__close">
+                    </lightning-button-icon>
+                    <h2>Add a new movie</h2>
+                </div>
+                <!------Body Section-->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <div style="text-align: center;">
+                        <p>Hello guys, welcome to salesforcepoint.com. <br>
+                            This is the basic lightning web component Modal popup.
+                        </p>
+                    </div>
+                </div>
+                <!------Footer Section-->
+                <div class="slds-modal__footer">
+                    <lightning-button icon-name="utility:close" label="close" variant="brand" onclick={handleCloseModal}>
+                    </lightning-button>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

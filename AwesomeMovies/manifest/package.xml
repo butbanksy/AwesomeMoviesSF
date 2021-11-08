@@ -58,6 +58,7 @@
         <members>fiveStarRating</members>
         <members>starRating</members>
         <members>notFound</members>
+        <members>createMovieModal</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>

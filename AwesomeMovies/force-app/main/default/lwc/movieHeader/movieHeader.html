@@ -6,7 +6,10 @@
 <template>
     <div class="slds-grid slds-wrap slds-size_1-of-1 slds-clearfix slds-m-bottom_medium slds-p-right_x-small">
         <div class="slds-size_1-of-1">
-            <div class="slds-button slds-button_neutral slds-float_right">Add new movie</div>
+            <div class="slds-button slds-button_neutral slds-float_right" onclick={showModal}>Add new movie</div>
+            <template if:true={modalStatus}>
+                <c-create-movie-modal open-modal={openModal} onclosemodal= {closeModal} ></c-create-movie-modal>
+            </template>
         </div>
         <div>
         </div>
